@@ -15,7 +15,7 @@ class _BiddingItemPageState extends State<BiddingItemPage> {
   final TextEditingController _descriptionController = TextEditingController();
   final TextEditingController _startingBidController = TextEditingController();
   // DateTime _timeLimit = DateTime.now();
-  // List<String> _imageUrls = []; // Assuming you allow multiple images.
+  List<String> _imageUrls = []; // Assuming you allow multiple images.
 
   // Firebase Authentication instance
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -55,7 +55,7 @@ class _BiddingItemPageState extends State<BiddingItemPage> {
                   id: UniqueKey().toString(), // Generate a unique ID.
                   title: _titleController.text,
                   description: _descriptionController.text,
-                  // imageUrls: _imageUrls,
+                  imageUrls: _imageUrls,
                   // timeLimit: _timeLimit,
                   startingBidPrice: double.parse(_startingBidController.text),
                   currentBidPrice: double.parse(

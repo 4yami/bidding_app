@@ -4,7 +4,7 @@ class BiddingItem {
   final String id;
   final String title;
   final String description;
-  // final List<String> imageUrls;
+  final List<String> imageUrls;
   // final DateTime timeLimit;
   final double startingBidPrice;
   double currentBidPrice;
@@ -15,7 +15,7 @@ class BiddingItem {
     required this.id,
     required this.title,
     required this.description,
-    // required this.imageUrls,
+    required this.imageUrls,
     // required this.timeLimit,
     required this.startingBidPrice,
     required this.currentBidPrice,
@@ -27,6 +27,7 @@ class BiddingItem {
         "id": id,
         "title": title,
         "description": description,
+        "image_urls": imageUrls,
         "starting_bid_price": startingBidPrice,
         "current_bid_price": currentBidPrice,
       };
