@@ -28,5 +28,6 @@ class BiddingItem {
         "title": title,
         "description": description,
         "starting_bid_price": startingBidPrice,
+        "current_bid_price": currentBidPrice,
       };
 }
